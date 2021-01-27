@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4c32b7def9b6d9c4389df5ec542e3011
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - enemy: {instanceID: 0}
+  - doctor: {fileID: 7579400469687068658, guid: 8d5a7bb8b176c3946905cb8667d0ebf2,
+      type: 3}
+  - rewardItem: {fileID: 11400000, guid: 8d9f5adec16c970458baac2101099812, type: 2}
+  - itemRequired: {fileID: 11400000, guid: 8de919b448db484459ca6fa95ea81d41, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

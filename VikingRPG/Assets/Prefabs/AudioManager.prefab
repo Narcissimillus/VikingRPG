@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4809200236448906988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4809200236448906986}
+  - component: {fileID: 4809200236448906989}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4809200236448906986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4809200236448906988}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4809200236448906989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4809200236448906988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9f38a5b4acbda42a47fb62ee4ef7fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 614980ff1e2cee943bef2703ada3fd78, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: Equip
+    clip: {fileID: 8300000, guid: 3105ec5644ad591408c1dd0f1577b394, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: EquipSword
+    clip: {fileID: 8300000, guid: 3dc1ba71ebbad844a92dff45bfca7f53, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: UnequipSword
+    clip: {fileID: 8300000, guid: ea62b84015c67a9498b587d2d684b331, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: AttackMiss
+    clip: {fileID: 8300000, guid: b938216ee0b87774b9ed0ddc5868f99a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: AttackArrowHit
+    clip: {fileID: 8300000, guid: db93777afcb3a0c40bf0af6af17408ad, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: AttackSwordHit
+    clip: {fileID: 8300000, guid: 28cf2303152bdfb4eb19763ff57bd39b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: Victory
+    clip: {fileID: 8300000, guid: fb79b878d688b354b89bc9a5942c7f80, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: AttackHit
+    clip: {fileID: 8300000, guid: 905aa47910e8e0c458109e3773ae490f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: SkeletonAttackHit
+    clip: {fileID: 8300000, guid: e76cb27493344954980107d672481591, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: e482c303ed27f8048a827752ba984626, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: DropItem
+    clip: {fileID: 8300000, guid: 644d3d60c7439ca40ba1df151844e673, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: SkeletonDeath
+    clip: {fileID: 8300000, guid: ae1e010d1503a6a4494f98057383240d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: Dissolve
+    clip: {fileID: 8300000, guid: d56459bbe94c0bf40b9858b68269aa80, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
+  - name: MenuTheme
+    clip: {fileID: 8300000, guid: e6dc7138874dc36409add67bb9d32069, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    audioMixerGroup: {fileID: 24300002, guid: e890249d528837143a30a6199ae91f8e, type: 2}
+    source: {fileID: 0}
