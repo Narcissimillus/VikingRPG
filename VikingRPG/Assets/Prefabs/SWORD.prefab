@@ -124,3 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   compareTo: OppHurtBox
+  damage: 15
+  hitSplash:
+  - {fileID: 198381239668097408, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
+  - {fileID: 198790505292789642, guid: b6445265c47fd4d4fa8e84418e5d90cd, type: 3}

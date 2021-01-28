@@ -7,7 +7,6 @@ public class BookOfSagesQuest : Quest
     public string[] sentences;
     public EnemyController enemy;
     public GameObject doctor;
-    public Item rewardItem, itemRequired;
     public bool completedFirstPart, completedSecondPart;
 
     // Start is called before the first frame update
@@ -24,7 +23,7 @@ public class BookOfSagesQuest : Quest
         Rewards.Add(new ItemReward("sword"));
         Rewards.Add(new ItemReward("shield"));
         Rewards.Add(new ItemReward("bow"));
-        Rewards.Add(new ItemReward("500 coins", rewardItem));
+        Rewards.Add(new ItemReward("500 coins", rewardItem[0]));
         //Rewards.Add(new ExperienceReward(...));
 
     }

@@ -8,6 +8,8 @@ public class Quest : MonoBehaviour
     public string description;
     public List<Goal> Goals = new List<Goal>();
     public List<Reward> Rewards = new List<Reward>();
+    public Item itemRequired;
+    public Item[] rewardItem;
     public bool completed;
 
     public virtual void Init()
@@ -19,6 +21,7 @@ public class Quest : MonoBehaviour
         completed = Goals.TrueForAll(g => g.completed); //questul este gata cand toate obiectivele sunt complete
         if (completed)
         {
+            InventoryManager.instance.Remove(itemRequired);
             GiveReward();
         }
         else

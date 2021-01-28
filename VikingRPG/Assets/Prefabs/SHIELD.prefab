@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2092899835111433178}
   - component: {fileID: 4475277394485831387}
   - component: {fileID: 2092899834272169647}
-  - component: {fileID: 3407348067032998963}
   m_Layer: 0
   m_Name: SHIELD
   m_TagString: Untagged
@@ -111,15 +110,3 @@ MonoBehaviour:
   player: {fileID: 7104733162922145547, guid: 69e229cfb919fd64f9168f24d7cb88bd, type: 3}
   done: 0
   item: {fileID: 11400000, guid: 71d215d970275734bbb4f7ab164ef5b6, type: 2}
---- !u!114 &3407348067032998963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092899835113438490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bf612c9871c244d95851ce7b1b2b89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

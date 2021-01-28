@@ -1529,6 +1529,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2624f5cefba59b346bc44f2d8f8b101c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrow: {fileID: 0}
+  gameOverMenu: {fileID: 0}
+  target: {fileID: 0}
+  lastEnemyTarget: {fileID: 0}
+  rightHandEquipped: 0
+  leftHandEquipped: 0
+  hasBowEquipped: 0
+  protectionArmour: 0
+  tookHit: 0
 --- !u!114 &7104117117479283497
 MonoBehaviour:
   m_ObjectHideFlags: 0

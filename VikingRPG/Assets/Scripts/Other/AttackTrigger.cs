@@ -31,11 +31,13 @@ public class AttackTrigger : MonoBehaviour
                     oppAnimator.SetInteger("HP", oppAnimator.GetInteger("HP") - damage);
                     if (oppAnimator.GetComponent<PlayerController>() != null && oppAnimator.GetComponentInChildren<UnityEngine.UI.Slider>().value > 0)
                     {
+                        ParticleSysManager.instance.Play(0);
                         FindObjectOfType<AudioManager>().Play("AttackSwordHit");
                         oppAnimator.SetInteger("HP", oppAnimator.GetInteger("HP") + oppAnimator.GetComponent<PlayerController>().protectionArmour);
                     }
                     else
                     {
+                        ParticleSysManager.instance.Play(1);
                         FindObjectOfType<AudioManager>().Play("SkeletonAttackHit");
                     }
                 }

@@ -42,6 +42,7 @@ public class ArrowController : MonoBehaviour
                 if (oppAnimator.GetFloat("timeSinceLastHit") > 0.5f)
                 {
                     oppAnimator.SetTrigger("takeHit");
+                    ParticleSysManager.instance.Play(1);
                     FindObjectOfType<AudioManager>().Play("AttackArrowHit");
                     oppAnimator.SetInteger("HP", oppAnimator.GetInteger("HP") - damage);
                 }
