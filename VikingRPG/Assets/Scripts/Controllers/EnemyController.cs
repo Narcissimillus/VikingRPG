@@ -9,7 +9,6 @@ public class EnemyController : MonoBehaviour
     public Transform player;
     Animator animator;
     Slider healthBar;
-    public Item bookOfSages;
     public float radius = 30f;
     public float attackDistanceThreshold = 1f;
     public Renderer[] renderers;
@@ -17,7 +16,6 @@ public class EnemyController : MonoBehaviour
     float distance;
     public delegate void EnemyManager(string enemyName);
     public EnemyManager onDie;
-    private bool isQuitting = false;
     float dissolveScale = 0;
 
     void OnDrawGizmosSelected()
@@ -128,18 +126,5 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSeconds(4.5f);
         tookHit = false;
         StartCoroutine(Patrol(10f));
-    }
-
-    private void OnApplicationQuit()
-    {
-        isQuitting = true;
-    }
-
-    private void OnDestroy()
-    {
-        if (!isQuitting && !PauseMenu.isExitting)
-        {
-            Instantiate(bookOfSages.itemObject, this.transform.position, Quaternion.Euler(0, 90, 0));
-        }
     }
 }

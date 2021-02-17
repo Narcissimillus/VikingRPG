@@ -7,6 +7,8 @@ public class BookOfSagesQuest : Quest
     public string[] sentences;
     public EnemyController enemy;
     public GameObject doctor;
+    public GameObject timeline;
+    public GameObject nextNPCQuest;
     public bool completedFirstPart, completedSecondPart;
 
     // Start is called before the first frame update
@@ -48,6 +50,7 @@ public class BookOfSagesQuest : Quest
                     {
                         completedFirstPart = true;
                         enemy.gameObject.SetActive(true);
+                        timeline.SetActive(true);
                     }
                 }
             }
@@ -96,6 +99,7 @@ public class BookOfSagesQuest : Quest
                 completedSecondPart = true;
                 completed = true;
                 GiveReward();
+                nextNPCQuest.SetActive(true);
                 InventoryManager.instance.Remove(itemRequired);
             }
             else

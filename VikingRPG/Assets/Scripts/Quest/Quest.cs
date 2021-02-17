@@ -21,7 +21,8 @@ public class Quest : MonoBehaviour
         completed = Goals.TrueForAll(g => g.completed); //questul este gata cand toate obiectivele sunt complete
         if (completed)
         {
-            InventoryManager.instance.Remove(itemRequired);
+            if(itemRequired != null)
+                InventoryManager.instance.Remove(itemRequired);
             GiveReward();
         }
         else
