@@ -37,7 +37,10 @@ public class AttackTrigger : MonoBehaviour
                     }
                     else
                     {
-                        ParticleSysManager.instance.Play(1);
+                        if (oppAnimator.name == "SKELETON")
+                            ParticleSysManager.instance.Play(1);
+                        else
+                            ParticleSysManager.instance.Play(2);
                         FindObjectOfType<AudioManager>().Play("SkeletonAttackHit");
                     }
                 }
